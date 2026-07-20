@@ -2,7 +2,7 @@ import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Float, OrbitControls, Bounds } from "@react-three/drei";
 import RocketModel from "./RocketModel";
-import config from "../data/missioncraft.json";
+import config from "../data/Missioncraft.json";
 
 export default function MissionCraft() {
   return (

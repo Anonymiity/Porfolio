@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import RocketCanvas from "./RocketCanvas";
-import heroData from "../components/data/hero.json";
+import heroData from "../components/data/Hero.json";
 
 export default function Hero() {
   const fullText = heroData.title.typing;

@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { gsap } from "gsap";
-import rocketParts from "./data/rocketParts.json";
+import rocketParts from "./data/RocketParts.json";
 
 export default function RocketModel({ onPartHover }) {
   const { scene } = useGLTF("/models/rocket.glb");

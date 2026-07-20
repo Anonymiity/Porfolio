@@ -1,5 +1,5 @@
 import React from "react";
-import navbarData from "../components/data/navbar.json";
+import navbarData from "../components/data/Navbar.json";
 
 export default function Navbar() {
   return (

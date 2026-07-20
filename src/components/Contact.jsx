@@ -1,5 +1,5 @@
 import React from "react";
-import contactData from "../components/data/contact.json";
+import contactData from "../components/data/Contact.json";
 import socialsData from "../components/data/Social.json";
 
 export default function Contact() {
