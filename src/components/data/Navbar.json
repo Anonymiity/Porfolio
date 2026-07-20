@@ -1,0 +1,23 @@
+{
+  "logo": "TANUSH LAD ",
+  "subs": " | Aerospace Engineer",
+
+  "links": [
+    {
+      "title": "Skills",
+      "href": "#skills"
+    },
+    {
+      "title": "Projects",
+      "href": "#projects"
+    },
+    {
+      "title": "Experience",
+      "href": "#experience"
+    },
+    {
+      "title": "Contact",
+      "href": "#contact"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "header": {
+    "subtitle": "Contact",
+    "title": "Let's Build the Next Mission",
+    "description": "Whether it's aerospace engineering, simulation, software development, or an exciting idea, I'm always open to discussing new opportunities and collaborations."
+  },
+
+  "contactInfo": [
+    {
+      "icon": "Mail",
+      "title": "Email",
+      "value": "tanushlad26@gmail.com",
+      "link": "mailto:tanushlad26@gmail.com"
+    },
+    {
+      "icon": "Phone",
+      "title": "Phone",
+      "value": "+91 9033011285",
+      "link": "tel:+919033011285"
+    },
+    {
+      "icon": "MapPin",
+      "title": "Location",
+      "value": "Chennai, India",
+      "link": "#"
+    }
+  ],
+
+  "cta": {
+    "title": "Ready for Launch?",
+    "description": "I'm always interested in challenging engineering problems, research collaborations and exciting aerospace projects.",
+    "button": {
+      "text": "Get In Touch",
+      "link": "mailto:tanushlad26@gmail.com"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+    "header": {
+        "title": "Featured Projects",
+        "description": "A collection of aerospace engineering projects showcasing expertise in structural analysis, propulsion, computational simulation, and intelligent system design."
+    },
+    "projects": [
+        {
+            "type": "Research",
+            "title": "Digital Twin of an Aircraft Wing",
+            "description": "Developed a real-time digital twin integrating sensor data, FEA, CFD, and live structural health monitoring."
+        },
+        {
+            "type": "CFD",
+            "title": "Pintle Injector Flow Analysis",
+            "description": "Performed CFD simulations to evaluate the effect of varying pintle gaps on injector flow characteristics and mixing."
+        },
+        {
+            "type": "Propulsion",
+            "title": "Cold Flow Analysis of a Convergent-Divergent Nozzle",
+            "description": "Analyzed compressible flow behavior through a rocket nozzle using numerical simulations and theoretical validation."
+        },
+        {
+            "type": "Aircraft Design",
+            "title": "Supersonic Private Jet Concept",
+            "description": "Designed a Mach 2.5 business jet by integrating aerodynamic performance, propulsion selection, and mission analysis."
+        },
+        {
+            "type": "Propulsion",
+            "title": "Solid Rocket Motor Performance Analysis",
+            "description": "Predicted rocket motor performance using NASA CEA and propulsion design methodologies."
+        },
+        {
+            "type": "Flight Systems",
+            "title": "Miniature Auto-Throttle & Thrust Reversal System",
+            "description": "Designed and built a prototype thrust management system using Arduino, sensors, and custom mechanical components."
+        },
+        {
+            "type": "Aerodynamics",
+            "title": "Parachute Design & Recovery System",
+            "description": "Designed a recovery parachute to achieve controlled descent through aerodynamic sizing and performance analysis."
+        },
+        {
+            "type": "Rocket Design",
+            "title": "Preliminary Rocket Design",
+            "description": "Designed a high-power rocket for a 1 km mission using CAD modeling, stability analysis, and trajectory simulation."
+        }
+    ]
+}

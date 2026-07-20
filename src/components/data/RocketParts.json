@@ -1,0 +1,57 @@
+{
+  "mesh_2_1": {
+    "displayName": "Nose Cone",
+    "material": "Carbon Fiber Composite",
+    "mass": "0.32 kg",
+    "description": "Provides an aerodynamic profile while protecting the payload section.",
+    "color": "#4F46E5"
+  },
+
+  "Payload-1": {
+    "displayName": "Payload",
+    "material": "Aluminium 6061",
+    "mass": "1.20 kg",
+    "description": "Contains avionics, recovery electronics and mission payload.",
+    "color": "#0EA5E9"
+  },
+
+  "Bulkhead-1": {
+    "displayName": "Bulkhead",
+    "material": "Aluminium 7075",
+    "mass": "0.18 kg",
+    "description": "Transfers structural loads while separating internal compartments.",
+    "color": "#22C55E"
+  },
+
+  "Main_Body_Tube-1": {
+    "displayName": "Main Body Tube",
+    "material": "Carbon Fiber Composite",
+    "mass": "1.65 kg",
+    "description": "Primary structural member supporting the complete vehicle.",
+    "color": "#F97316"
+  },
+
+  "Fins-1": {
+    "displayName": "Fin Assembly",
+    "material": "Carbon Fiber",
+    "mass": "0.55 kg",
+    "description": "Provides aerodynamic stability during ascent.",
+    "color": "#E11D48"
+  },
+
+  "Tail_Section-1": {
+    "displayName": "Nozzle & Motor",
+    "material": "Graphite + Aluminium",
+    "mass": "3.10 kg",
+    "description": "Generates thrust and accelerates the launch vehicle.",
+    "color": "#A855F7"
+  },
+
+  "mesh_2": {
+    "displayName": "Nose Cone Shoulder",
+    "material": "Carbon Fiber Composite",
+    "mass": "0.15 kg",
+    "description": "Structural interface between the nose cone and body tube.",
+    "color": "#FACC15"
+  }
+}

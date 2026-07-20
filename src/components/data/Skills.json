@@ -1,0 +1,107 @@
+{
+  "header": {
+    "subtitle": "Engineering Expertise",
+    "title": {
+      "normal": "Core",
+      "highlight": "Technical Skills"
+    },
+    "description": "A comprehensive toolkit built through industry experience, research, and hands-on aerospace engineering projects spanning structures, propulsion, simulation, and software."
+  },
+
+  "checklist": {
+    "subtitle": "Technical Competencies",
+    "title": "Engineering Skill Matrix",
+    "badge": "Mission Ready",
+
+    "items": [
+      {
+        "icon": "Layers3",
+        "name": "Structural Analysis",
+        "status": "ADVANCED",
+        "level": 95,
+        "details": "Finite Element Analysis (FEA), stress analysis, load path evaluation, Margin of Safety (MoS), structural validation"
+      },
+      {
+        "icon": "Rocket",
+        "name": "Propulsion",
+        "status": "ADVANCED",
+        "level": 90,
+        "details": "Rocket propulsion, nozzle analysis, combustion fundamentals, NASA CEA, thermal protection systems"
+      },
+      {
+        "icon": "Wind",
+        "name": "CFD & Aerodynamics",
+        "status": "ADVANCED",
+        "level": 88,
+        "details": "ANSYS Fluent, airfoil analysis, external aerodynamics, flow visualization, performance prediction"
+      },
+      {
+        "icon": "Activity",
+        "name": "Simulation",
+        "status": "ADVANCED",
+        "level": 90,
+        "details": "Numerical modeling, finite element simulation, structural validation, engineering optimization"
+      },
+      {
+        "icon": "Code2",
+        "name": "Programming",
+        "status": "PROFICIENT",
+        "level": 86,
+        "details": "Python, MATLAB, engineering automation, data analysis, ESP32, Arduino"
+      },
+      {
+        "icon": "Cpu",
+        "name": "CAD & Design",
+        "status": "ADVANCED",
+        "level": 92,
+        "details": "SolidWorks, CATIA V5, GD&T, design for manufacturing, aerospace assemblies"
+      }
+    ]
+  },
+
+  "summary": {
+    "subtitle": "Engineering Philosophy",
+    "title": "Design. Simulate. Validate.",
+    "description": "I combine analytical thinking with engineering software and hands-on experimentation to design, simulate, and validate aerospace systems from concept through certification."
+  },
+
+  "systems": [
+    {
+      "label": "Structures",
+      "status": "Operational"
+    },
+    {
+      "label": "Propulsion",
+      "status": "Operational"
+    },
+    {
+      "label": "Simulation",
+      "status": "Operational"
+    },
+    {
+      "label": "Automation",
+      "status": "Operational"
+    }
+  ],
+
+  "flightStack": {
+    "title": "Engineering Toolbox",
+    "tools": [
+      "HyperMesh",
+      "MSC Nastran",
+      "Patran",
+      "HyperView",
+      "ANSYS Fluent",
+      "ANSYS Mechanical",
+      "SolidWorks",
+      "CATIA V5",
+      "Python",
+      "Excel",
+      "NASA CEA",
+      "Arduino",
+      "ESP32",
+      "Git",
+      "React"
+    ]
+  }
+}

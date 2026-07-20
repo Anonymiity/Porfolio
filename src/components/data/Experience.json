@@ -1,0 +1,31 @@
+{
+  "header": {
+    "title": "Experience",
+    "description": "Career timeline displayed like a flight log."
+  },
+  "timeline": [
+    {
+      "role": "Stress Engineering Apprentice",
+      "organization": "Boeing India",
+      "duration": "Aug 2025 – Aug 2026",
+      "description": [
+        "Built certification-ready finite element models for B777-9 interior ceiling panel assemblies using HyperMesh, including geometry cleanup, midsurface extraction, shell meshing, beam modeling, and structural connections.",
+        "Performed stress analysis, load path evaluation, and Margin of Safety (MoS) assessments for multiple interior commodities using MSC Nastran, Patran, and HyperView, supporting FAA and EASA certification activities.",
+        "Developed engineering automation tools in Microsoft Excel, including a section analysis calculator for critical node identification and beam cross-section MoS calculations, reducing manual engineering effort.",
+        "Created a lap shear joint calculator for bonded joints, enabling faster structural substantiation and design verification.",
+        "Worked with Boeing structural design standards, material specifications, and certification documentation while collaborating with experienced stress engineers."
+      ]
+    },
+    {
+      "role": "Research Intern",
+      "organization": "DRDO – Advanced Systems Laboratory (ASL)",
+      "duration": "May 2025 – Jul 2025",
+      "description": [
+        "Conducted material characterization of low-density EPDM ablative insulation for Solid Rocket Motors used in aerospace propulsion applications.",
+        "Performed mechanical, thermal, and chemical testing including density, Shore A hardness, tensile strength, elongation, rheometry, thermal conductivity, FTIR, glass transition temperature (Tg), coefficient of thermal expansion (CTE), and crosslink density.",
+        "Analyzed experimental results to evaluate insulation performance under high-temperature operating conditions for rocket motor applications.",
+        "Collaborated with scientists and researchers to support the development and validation of advanced thermal protection materials."
+      ]
+    }
+  ]
+}
