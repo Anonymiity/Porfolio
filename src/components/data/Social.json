@@ -2,27 +2,27 @@
   "socials": [
     {
       "name": "LinkedIn",
-      "icon": "../../public/icons/linkedin.png",
+      "icon": "../../../public/icons/linkedin.png",
       "url": "https://linkedin.com/in/tanush-lad"
     },
     {
       "name": "GitHub",
-      "icon": "../../public/icons/github.png",
+      "icon": "../../../public/icons/github.png",
       "url": "https://github.com/Anonymiity"
     },
     {
       "name": "Email",
-      "icon": "../../public/icons/logo.png",
+      "icon": "../../../public/icons/logo.png",
       "url": "mailto:tanushlad26@gmail.com"
     },
     {
       "name": "Instagram",
-      "icon": "../../public/icons/instagram.png",
+      "icon": "../../../public/icons/instagram.png",
       "url": "https://instagram.com/__tanush_lad"
     },
     {
       "name": "X",
-      "icon": "../../public/icons/twitter.png",
+      "icon": "../../../public/icons/twitter.png",
       "url": "https://x.com/TanushLad"
     }
   ]
