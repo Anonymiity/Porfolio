@@ -11,10 +11,10 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white"
+      className="relative overflow-hidden bg-[var(--bg-primary)] px-6 py-28 text-[var(--text-primary)]"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.12),transparent_35%)]" />
-      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent-secondary)_12%,transparent),transparent_35%)]" />
+      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(color-mix(in_srgb,var(--text-primary)_5%,transparent)_1px,transparent_1px),linear-gradient(90deg,color-mix(in_srgb,var(--text-primary)_5%,transparent)_1px,transparent_1px)] bg-[size:80px_80px]" />
 
       <div className="relative mx-auto max-w-6xl">
         <motion.div
@@ -24,13 +24,13 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <p className="text-sm uppercase tracking-[0.4em] text-cyan-300">
+          <p className="text-sm uppercase tracking-[0.4em] text-[var(--accent-primary)]">
             Portfolio
           </p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">
             {projectsData.header.title}
           </h2>
-          <p className="mt-5 text-lg leading-9 text-gray-300">
+          <p className="mt-5 text-lg leading-9 text-[var(--text-secondary)]">
             {projectsData.header.description}
           </p>
         </motion.div>
@@ -45,10 +45,10 @@ export default function Projects() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.02 }}
               onClick={() => setSelectedProject(project)}
-              className="group cursor-pointer overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-lg shadow-cyan-500/5 transition-all duration-300 hover:border-cyan-400/60 hover:shadow-cyan-500/20"
+              className="group cursor-pointer overflow-hidden rounded-[2rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-6 shadow-lg shadow-[0_4px_20px_-5px_color-mix(in_srgb,var(--accent-glow)_5%,transparent)] transition-all duration-300 hover:border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] hover:shadow-[0_10px_40px_-10px_color-mix(in_srgb,var(--accent-glow)_20%,transparent)]"
             >
               {/* Project Image Placeholder */}
-              <div className="relative mb-6 h-48 overflow-hidden rounded-xl border border-white/10 bg-black/20">
+              <div className="relative mb-6 h-48 overflow-hidden rounded-xl border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_20%,transparent)]">
                 {project.image ? (
                   <img
                     src={project.image}
@@ -60,26 +60,26 @@ export default function Projects() {
                     }}
                   />
                 ) : null}
-                <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-900/20 to-blue-900/20 ${project.image ? 'hidden' : 'flex'}`}>
-                  <span className="text-4xl font-bold text-cyan-400/30">{project.type[0]}</span>
+                <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)] to-[color-mix(in_srgb,var(--gradient-to)_20%,transparent)] ${project.image ? 'hidden' : 'flex'}`}>
+                  <span className="text-4xl font-bold text-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)]">{project.type[0]}</span>
                 </div>
                 <div className="absolute top-3 left-3">
-                  <span className="rounded-full border border-cyan-400/30 bg-black/50 backdrop-blur-md px-3 py-1 text-xs font-medium text-cyan-300">
+                  <span className="rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_50%,transparent)] backdrop-blur-md px-3 py-1 text-xs font-medium text-[var(--accent-primary)]">
                     {project.type}
                   </span>
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition">
+              <h3 className="text-xl font-bold text-[var(--text-primary)] group-hover:text-[var(--accent-primary)] transition">
                 {project.title}
               </h3>
 
-              <p className="mt-3 text-sm leading-6 text-gray-400 line-clamp-3">
+              <p className="mt-3 text-sm leading-6 text-[var(--text-muted)] line-clamp-3">
                 {project.description}
               </p>
 
               {/* Meta info */}
-              <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-gray-500">
+              <div className="mt-4 flex flex-wrap items-center gap-3 text-xs text-[var(--text-dim)]">
                 {project.duration && (
                   <span className="flex items-center gap-1">
                     <Clock size={12} />
@@ -93,7 +93,7 @@ export default function Projects() {
                   </span>
                 )}
                 {project.role && (
-                  <span className="text-cyan-400/70">{project.role}</span>
+                  <span className="text-[color-mix(in_srgb,var(--accent-secondary)_70%,transparent)]">{project.role}</span>
                 )}
               </div>
 
@@ -103,20 +103,20 @@ export default function Projects() {
                   {project.techStack.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border border-white/10 bg-black/20 px-2 py-0.5 text-[10px] text-gray-400"
+                      className="rounded-full border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_20%,transparent)] px-2 py-0.5 text-[10px] text-[var(--text-muted)]"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.techStack.length > 4 && (
-                    <span className="rounded-full border border-white/10 bg-black/20 px-2 py-0.5 text-[10px] text-gray-400">
+                    <span className="rounded-full border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_20%,transparent)] px-2 py-0.5 text-[10px] text-[var(--text-muted)]">
                       +{project.techStack.length - 4}
                     </span>
                   )}
                 </div>
               )}
 
-              <div className="mt-5 flex items-center gap-2 text-sm font-medium text-cyan-400 opacity-0 transition group-hover:opacity-100">
+              <div className="mt-5 flex items-center gap-2 text-sm font-medium text-[var(--accent-secondary)] opacity-0 transition group-hover:opacity-100">
                 View Details
                 <ExternalLink size={14} />
               </div>
@@ -144,7 +144,7 @@ function ProjectModal({ project, onClose }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[color-mix(in_srgb,var(--bg-primary)_80%,transparent)] backdrop-blur-sm"
       onClick={onClose}
     >
       <motion.div
@@ -152,38 +152,38 @@ function ProjectModal({ project, onClose }) {
         animate={{ scale: 1, opacity: 1, y: 0 }}
         exit={{ scale: 0.9, opacity: 0, y: 20 }}
         transition={{ type: "spring", damping: 25, stiffness: 300 }}
-        className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto scrollbar-none rounded-[2rem] border border-white/10 bg-[#0a0f1e] p-8 shadow-2xl shadow-cyan-500/10"
+        className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto scrollbar-none rounded-[2rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[var(--bg-secondary)] p-8 shadow-2xl shadow-[0_10px_40px_-10px_color-mix(in_srgb,var(--accent-glow)_10%,transparent)]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute right-6 top-6 rounded-full border border-white/10 bg-white/5 p-2 text-gray-400 transition hover:border-cyan-400/50 hover:text-cyan-300"
+          className="absolute right-6 top-6 rounded-full border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-2 text-[var(--text-muted)] transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_50%,transparent)] hover:text-[var(--accent-primary)]"
         >
           <CloseIcon size={20} />
         </button>
 
-        <span className="inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">
+        <span className="inline-block rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)] px-3 py-1 text-xs font-medium text-[var(--accent-primary)]">
           {project.type}
         </span>
 
         <h2 className="mt-4 text-3xl font-bold">{project.title}</h2>
 
-        <div className="mt-4 flex flex-wrap gap-4 text-sm text-gray-400">
+        <div className="mt-4 flex flex-wrap gap-4 text-sm text-[var(--text-muted)]">
           {project.duration && (
             <span className="flex items-center gap-1.5">
-              <Clock size={14} className="text-cyan-400" />
+              <Clock size={14} className="text-[var(--accent-secondary)]" />
               {project.duration}
             </span>
           )}
           {project.teamSize && (
             <span className="flex items-center gap-1.5">
-              <Users size={14} className="text-cyan-400" />
+              <Users size={14} className="text-[var(--accent-secondary)]" />
               {project.role} &bull; Team of {project.teamSize}
             </span>
           )}
         </div>
 
-        <div className="mt-6 h-64 overflow-hidden rounded-xl border border-white/10 relative">
+        <div className="mt-6 h-64 overflow-hidden rounded-xl border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] relative">
           {project.image ? (
             <img
               src={project.image}
@@ -194,24 +194,24 @@ function ProjectModal({ project, onClose }) {
               }}
             />
           ) : null}
-          <div className={`absolute overflow-y-auto inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-900/20 to-blue-900/20 ${project.image ? 'hidden' : 'flex'}`}>
-            <span className="text-6xl font-bold text-cyan-400/20">{project.type[0]}</span>
+          <div className={`absolute overflow-y-auto inset-0 flex items-center justify-center bg-gradient-to-br from-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)] to-[color-mix(in_srgb,var(--gradient-to)_20%,transparent)] ${project.image ? 'hidden' : 'flex'}`}>
+            <span className="text-6xl font-bold text-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)]">{project.type[0]}</span>
           </div>
         </div>
 
         <div className="mt-6">
-          <h3 className="text-lg font-semibold text-cyan-300">Overview</h3>
-          <p className="mt-2 leading-8 text-gray-300">{project.description}</p>
+          <h3 className="text-lg font-semibold text-[var(--accent-primary)]">Overview</h3>
+          <p className="mt-2 leading-8 text-[var(--text-secondary)]">{project.description}</p>
         </div>
 
         {project.techStack && (
           <div className="mt-6">
-            <h3 className="text-lg font-semibold text-cyan-300">Technologies</h3>
+            <h3 className="text-lg font-semibold text-[var(--accent-primary)]">Technologies</h3>
             <div className="mt-3 flex flex-wrap gap-2">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1.5 text-sm text-cyan-300"
+                  className="rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)] px-4 py-1.5 text-sm text-[var(--accent-primary)]"
                 >
                   {tech}
                 </span>
@@ -221,12 +221,12 @@ function ProjectModal({ project, onClose }) {
         )}
 
         <div className="mt-8 flex flex-wrap gap-3">
-          {project.link && project.link !== "#" && (
+                    {project.link && project.link !== "#" && (
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-2.5 font-semibold text-black transition hover:bg-cyan-300"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--accent-secondary)] px-6 py-2.5 font-semibold text-[var(--bg-primary)] transition hover:bg-[var(--accent-primary)]"
             >
               <ExternalLink size={16} />
               Live Demo
@@ -237,7 +237,7 @@ function ProjectModal({ project, onClose }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-2.5 font-semibold text-white transition hover:border-cyan-400/60 hover:bg-cyan-400/10"
+              className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--text-primary)_20%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] px-6 py-2.5 font-semibold text-[var(--text-primary)] transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] hover:bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)]"
             >
               <img src={GithubIcon} alt="GitHub" className="h-4 w-4" />
               Source Code
@@ -248,7 +248,7 @@ function ProjectModal({ project, onClose }) {
               href={project.report}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-2.5 font-semibold text-white transition hover:border-cyan-400/60 hover:bg-cyan-400/10"
+              className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--text-primary)_20%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] px-6 py-2.5 font-semibold text-[var(--text-primary)] transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] hover:bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)]"
             >
               <FileText size={16} />
               View Report

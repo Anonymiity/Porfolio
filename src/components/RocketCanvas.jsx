@@ -70,23 +70,23 @@ export default function RocketCanvas() {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: -20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-6 left-6 z-40 w-72 rounded-2xl border border-white/10 bg-black/70 p-5 text-white backdrop-blur-2xl shadow-2xl"
+            className="absolute top-6 left-6 z-40 w-72 rounded-2xl border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_70%,transparent)] p-5 text-[var(--text-primary)] backdrop-blur-2xl shadow-2xl"
           >
             <div
               className="h-1 rounded-full mb-4"
               style={{ background: hoveredData.color }}
             />
             <h2 className="text-2xl font-bold">{hoveredData.displayName}</h2>
-            <p className="mt-2 text-sm text-gray-400 leading-relaxed">
+            <p className="mt-2 text-sm text-[var(--text-muted)] leading-relaxed">
               {hoveredData.description}
             </p>
             <div className="mt-4 space-y-3">
               <div className="flex items-center justify-between text-sm">
-                <span className="text-gray-500">Material</span>
-                <span className="text-cyan-300">{hoveredData.material}</span>
+                <span className="text-[var(--text-dim)]">Material</span>
+                <span className="text-[var(--accent-primary)]">{hoveredData.material}</span>
               </div>
             </div>
-            <div className="mt-4 flex items-center gap-1.5 text-xs text-cyan-400/70">
+            <div className="mt-4 flex items-center gap-1.5 text-xs text-[color-mix(in_srgb,var(--accent-secondary)_70%,transparent)]">
               <Crosshair size={12} />
               <span>Click to inspect part</span>
             </div>
@@ -151,11 +151,11 @@ export default function RocketCanvas() {
             className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center"
           >
             <div className="relative h-64 w-64">
-              <div className="absolute left-0 top-0 h-8 w-8 border-l-2 border-t-2 border-cyan-400/40" />
-              <div className="absolute right-0 top-0 h-8 w-8 border-r-2 border-t-2 border-cyan-400/40" />
-              <div className="absolute left-0 bottom-0 h-8 w-8 border-l-2 border-b-2 border-cyan-400/40" />
-              <div className="absolute right-0 bottom-0 h-8 w-8 border-r-2 border-b-2 border-cyan-400/40" />
-              <div className="absolute left-1/2 top-1/2 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/60" />
+              <div className="absolute left-0 top-0 h-8 w-8 border-l-2 border-t-2 border-[color-mix(in_srgb,var(--accent-secondary)_40%,transparent)]" />
+              <div className="absolute right-0 top-0 h-8 w-8 border-r-2 border-t-2 border-[color-mix(in_srgb,var(--accent-secondary)_40%,transparent)]" />
+              <div className="absolute left-0 bottom-0 h-8 w-8 border-l-2 border-b-2 border-[color-mix(in_srgb,var(--accent-secondary)_40%,transparent)]" />
+              <div className="absolute right-0 bottom-0 h-8 w-8 border-r-2 border-b-2 border-[color-mix(in_srgb,var(--accent-secondary)_40%,transparent)]" />
+              <div className="absolute left-1/2 top-1/2 h-1 w-1 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)]" />
             </div>
           </motion.div>
         )}
@@ -170,7 +170,7 @@ export default function RocketCanvas() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 120 }}
             transition={{ type: "spring", damping: 28, stiffness: 220 }}
-            className="fixed right-0 top-13 z-[60] h-screen w-full max-w-md overflow-y-auto border-l border-white/10 bg-[#050816]/95 backdrop-blur-2xl"
+            className="fixed right-0 top-13 z-[60] h-screen w-full max-w-md overflow-y-auto border-l border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[var(--bg-primary)]/95 backdrop-blur-2xl"
             style={{
               scrollbarWidth: "none",
               msOverflowStyle: "none",
@@ -182,7 +182,7 @@ export default function RocketCanvas() {
             {/* Close Button */}
             <button
               onClick={handleCloseFocus}
-              className="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-gray-400 transition hover:border-cyan-400/50 hover:text-cyan-300 hover:bg-cyan-400/10"
+              className="absolute right-5 top-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] text-[var(--text-muted)] transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_50%,transparent)] hover:text-[var(--accent-primary)] hover:bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)]"
             >
               <X size={18} />
             </button>
@@ -201,10 +201,10 @@ export default function RocketCanvas() {
                   <Maximize2 size={24} style={{ color: focusedData.color }} />
                 </div>
                 <div>
-                  <h2 className="text-3xl font-black text-white">
+                  <h2 className="text-3xl font-black text-[var(--text-primary)]">
                     {focusedData.displayName}
                   </h2>
-                  <p className="mt-1 text-sm text-gray-400">{focusedData.material}</p>
+                  <p className="mt-1 text-sm text-[var(--text-muted)]">{focusedData.material}</p>
                 </div>
               </div>
 
@@ -218,28 +218,27 @@ export default function RocketCanvas() {
 
               {/* Full Description */}
               <div className="mt-6">
-                <p className="text-sm leading-relaxed text-gray-300">
+                <p className="text-sm leading-relaxed text-[var(--text-secondary)]">
                   {focusedData.fullDescription}
                 </p>
               </div>
 
               {/* Quick Stats */}
-              
 
               {/* Specifications Table */}
               <div className="mt-6">
-                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-3">
-                  <Beaker size={14} className="text-cyan-400" />
+                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-[var(--text-dim)] mb-3">
+                  <Beaker size={14} className="text-[var(--accent-secondary)]" />
                   Technical Specifications
                 </h3>
                 <div className="space-y-2">
                   {Object.entries(focusedData.specifications || {}).map(([key, val]) => (
                     <div
                       key={key}
-                      className="flex items-center justify-between rounded-lg border border-white/5 bg-white/[0.02] px-4 py-2.5"
+                      className="flex items-center justify-between rounded-lg border border-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_2%,transparent)] px-4 py-2.5"
                     >
-                      <span className="text-sm text-gray-400">{key}</span>
-                      <span className="text-sm font-mono font-semibold text-cyan-200">{val}</span>
+                      <span className="text-sm text-[var(--text-muted)]">{key}</span>
+                      <span className="text-sm font-mono font-semibold text-[var(--accent-primary)]">{val}</span>
                     </div>
                   ))}
                 </div>
@@ -247,15 +246,15 @@ export default function RocketCanvas() {
 
               {/* Functions */}
               <div className="mt-6">
-                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-3">
-                  <RotateCcw size={14} className="text-emerald-400" />
+                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-[var(--text-dim)] mb-3">
+                  <RotateCcw size={14} className="text-[var(--status-online)]" />
                   Primary Functions
                 </h3>
                 <div className="space-y-2">
                   {focusedData.functions?.map((func, i) => (
                     <div key={i} className="flex items-start gap-3">
-                      <ChevronRight size={14} className="mt-0.5 shrink-0 text-cyan-400/60" />
-                      <span className="text-sm text-gray-300">{func}</span>
+                      <ChevronRight size={14} className="mt-0.5 shrink-0 text-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)]" />
+                      <span className="text-sm text-[var(--text-secondary)]">{func}</span>
                     </div>
                   ))}
                 </div>
@@ -263,36 +262,36 @@ export default function RocketCanvas() {
 
               {/* Material Properties */}
               <div className="mt-6">
-                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-gray-500 mb-3">
-                  <Beaker size={14} className="text-purple-400" />
+                <h3 className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.3em] text-[var(--text-dim)] mb-3">
+                  <Beaker size={14} className="text-[var(--accent-secondary)]" />
                   Material Properties
                 </h3>
                 <div className="grid grid-cols-1 gap-2">
                   {Object.entries(focusedData.materialProperties || {}).map(([key, val]) => (
                     <div
                       key={key}
-                      className="flex items-center justify-between rounded-lg border border-white/5 bg-white/[0.02] px-4 py-2"
+                      className="flex items-center justify-between rounded-lg border border-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_2%,transparent)] px-4 py-2"
                     >
-                      <span className="text-xs text-gray-500">{key}</span>
-                      <span className="text-xs font-mono font-semibold text-gray-300">{val}</span>
+                      <span className="text-xs text-[var(--text-dim)]">{key}</span>
+                      <span className="text-xs font-mono font-semibold text-[var(--text-secondary)]">{val}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Engineering Notes */}
-              <div className="mt-6 rounded-xl border border-amber-400/10 bg-amber-400/5 p-4">
-                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-amber-400/70 mb-2">
+              <div className="mt-6 rounded-xl border border-[color-mix(in_srgb,var(--highlight-secondary)_10%,transparent)] bg-[color-mix(in_srgb,var(--highlight-secondary)_5%,transparent)] p-4">
+                <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-[color-mix(in_srgb,var(--highlight-secondary)_70%,transparent)] mb-2">
                   Engineering Notes
                 </h3>
-                <p className="text-sm leading-relaxed text-gray-400 italic">
+                <p className="text-sm leading-relaxed text-[var(--text-muted)] italic">
                   {focusedData.engineeringNotes}
                 </p>
               </div>
 
               {/* Bottom hint */}
               <div className="mt-8 pb-8 text-center">
-                <p className="text-xs text-gray-600">
+                <p className="text-xs text-[var(--text-dim)]">
                   Drag the 3D model to rotate • Scroll to zoom
                 </p>
               </div>

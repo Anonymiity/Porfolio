@@ -14,10 +14,10 @@ const iconMap = {
 };
 
 const proficiencyConfig = {
-  EXPERT: { color: "text-emerald-300", bg: "bg-emerald-400/10", border: "border-emerald-400/30", gauge: "from-emerald-400 to-emerald-300" },
-  ADVANCED: { color: "text-cyan-300", bg: "bg-cyan-400/10", border: "border-cyan-400/30", gauge: "from-cyan-400 to-sky-300" },
-  PROFICIENT: { color: "text-amber-300", bg: "bg-amber-400/10", border: "border-amber-400/30", gauge: "from-amber-400 to-yellow-300" },
-  FAMILIAR: { color: "text-gray-300", bg: "bg-gray-400/10", border: "border-gray-400/30", gauge: "from-gray-400 to-gray-300" }
+  EXPERT: { color: "text-[var(--status-online)]", bg: "bg-[color-mix(in_srgb,var(--status-online)_10%,transparent)]", border: "border-[color-mix(in_srgb,var(--status-online)_30%,transparent)]", gauge: "from-[var(--status-online)] to-[var(--accent-primary)]" },
+  ADVANCED: { color: "text-[var(--accent-primary)]", bg: "bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)]", border: "border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)]", gauge: "from-[var(--accent-secondary)] to-[var(--gradient-mid)]" },
+  PROFICIENT: { color: "text-[var(--highlight-primary)]", bg: "bg-[color-mix(in_srgb,var(--highlight-secondary)_10%,transparent)]", border: "border-[color-mix(in_srgb,var(--highlight-secondary)_30%,transparent)]", gauge: "from-[var(--highlight-secondary)] to-[var(--highlight-primary)]" },
+  FAMILIAR: { color: "text-[var(--text-secondary)]", bg: "bg-[color-mix(in_srgb,var(--text-muted)_10%,transparent)]", border: "border-[color-mix(in_srgb,var(--text-muted)_30%,transparent)]", gauge: "from-[var(--text-muted)] to-[var(--text-secondary)]" }
 };
 
 const categories = ["All", "Structures", "Propulsion", "Software", "Simulation", "Design"];
@@ -43,12 +43,12 @@ export default function SkillsHUD() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden bg-[#050816] px-6 py-28 text-white"
+      className="relative overflow-hidden bg-[var(--bg-primary)] px-6 py-28 text-[var(--text-primary)]"
     >
       {/* Background effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.12),transparent_35%)]" />
-      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:80px_80px]" />
-      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.3),transparent_70%)] animate-pulse" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent-secondary)_12%,transparent),transparent_35%)]" />
+      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(color-mix(in_srgb,var(--text-primary)_5%,transparent)_1px,transparent_1px),linear-gradient(90deg,color-mix(in_srgb,var(--text-primary)_5%,transparent)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,color-mix(in_srgb,var(--accent-secondary)_30%,transparent),transparent_70%)] animate-pulse" />
 
       <div className="relative mx-auto max-w-6xl">
         {/* Header */}
@@ -59,16 +59,16 @@ export default function SkillsHUD() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-sm uppercase tracking-[0.4em] text-cyan-300">
+          <p className="text-sm uppercase tracking-[0.4em] text-[var(--accent-primary)]">
             {skillsData.header.subtitle}
           </p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">
             {skillsData.header.title.normal}{" "}
-            <span className="bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[var(--accent-primary)] via-[var(--gradient-mid)] to-[var(--gradient-to)] bg-clip-text text-transparent">
               {skillsData.header.title.highlight}
             </span>
           </h2>
-          <p className="mt-5 mx-auto max-w-2xl text-lg leading-9 text-gray-300">
+          <p className="mt-5 mx-auto max-w-2xl text-lg leading-9 text-[var(--text-secondary)]">
             {skillsData.header.description}
           </p>
         </motion.div>
@@ -87,8 +87,8 @@ export default function SkillsHUD() {
               onClick={() => setActiveCategory(cat)}
               className={`rounded-full border px-5 py-2 text-sm font-medium transition ${
                 activeCategory === cat
-                  ? "border-cyan-400/60 bg-cyan-400/20 text-cyan-300"
-                  : "border-white/10 bg-white/5 text-gray-400 hover:border-cyan-400/30 hover:text-cyan-300"
+                  ? "border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)] text-[var(--accent-primary)]"
+                  : "border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] text-[var(--text-muted)] hover:border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] hover:text-[var(--accent-primary)]"
               }`}
             >
               {cat}
@@ -113,7 +113,7 @@ export default function SkillsHUD() {
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   whileHover={{ y: -4, scale: 1.02 }}
                   onClick={() => setSelectedSkill(skill)}
-                  className="group cursor-pointer overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur-md transition hover:border-cyan-400/40 hover:shadow-cyan-500/10"
+                  className="group cursor-pointer overflow-hidden rounded-[1.5rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-6 shadow-lg backdrop-blur-md transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_40%,transparent)] hover:shadow-[0_4px_20px_-5px_color-mix(in_srgb,var(--accent-glow)_5%,transparent)]"
                 >
                   <div className="flex items-start justify-between">
                     <div className={`flex h-12 w-12 items-center justify-center rounded-xl border ${config.border} ${config.bg}`}>
@@ -124,20 +124,20 @@ export default function SkillsHUD() {
                     </span>
                   </div>
 
-                  <h3 className="mt-4 text-xl font-bold group-hover:text-cyan-300 transition">
+                  <h3 className="mt-4 text-xl font-bold group-hover:text-[var(--accent-primary)] transition">
                     {skill.name}
                   </h3>
-                  <p className="mt-2 text-sm leading-6 text-gray-400">
+                  <p className="mt-2 text-sm leading-6 text-[var(--text-muted)]">
                     {skill.details}
                   </p>
 
                   {/* Gauge */}
                   <div className="mt-5">
-                    <div className="flex justify-between text-xs text-gray-500 mb-2">
+                    <div className="flex justify-between text-xs text-[var(--text-dim)] mb-2">
                       <span>Proficiency</span>
                       <span className={config.color}>{skill.level}%</span>
                     </div>
-                    <div className="h-2 overflow-hidden rounded-full bg-white/10">
+                    <div className="h-2 overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--text-primary)_10%,transparent)]">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
@@ -148,7 +148,7 @@ export default function SkillsHUD() {
                     </div>
                   </div>
 
-                  <div className="mt-4 flex items-center gap-1 text-sm text-cyan-400 opacity-0 transition group-hover:opacity-100">
+                  <div className="mt-4 flex items-center gap-1 text-sm text-[var(--accent-secondary)] opacity-0 transition group-hover:opacity-100">
                     View Details <ChevronRight size={14} />
                   </div>
                 </motion.div>
@@ -165,14 +165,14 @@ export default function SkillsHUD() {
           transition={{ duration: 0.7 }}
           className="mt-16 grid gap-6 md:grid-cols-2"
         >
-          <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-8 backdrop-blur-md">
-            <h3 className="text-lg font-semibold text-cyan-300 mb-6">System Status</h3>
+          <div className="rounded-[1.5rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-8 backdrop-blur-md">
+            <h3 className="text-lg font-semibold text-[var(--accent-primary)] mb-6">System Status</h3>
             <div className="space-y-4">
               {skillsData.systems.map((system) => (
                 <div key={system.label} className="flex items-center justify-between">
-                  <span className="text-gray-300">{system.label}</span>
-                  <span className="flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-[var(--text-secondary)]">{system.label}</span>
+                  <span className="flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--status-online)_30%,transparent)] bg-[color-mix(in_srgb,var(--status-online)_10%,transparent)] px-3 py-1 text-xs font-medium text-[var(--status-online)]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[var(--status-online)] animate-pulse" />
                     {system.status}
                   </span>
                 </div>
@@ -180,13 +180,13 @@ export default function SkillsHUD() {
             </div>
           </div>
 
-          <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-8 backdrop-blur-md">
-            <h3 className="text-lg font-semibold text-cyan-300 mb-6">Engineering Toolbox</h3>
+          <div className="rounded-[1.5rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-8 backdrop-blur-md">
+            <h3 className="text-lg font-semibold text-[var(--accent-primary)] mb-6">Engineering Toolbox</h3>
             <div className="flex flex-wrap gap-2">
               {skillsData.flightStack.tools.map((tool) => (
                 <span
                   key={tool}
-                  className="rounded-lg border border-white/10 bg-black/20 px-3 py-1.5 text-sm text-cyan-100 transition hover:border-cyan-400/30 hover:bg-cyan-400/10"
+                  className="rounded-lg border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_20%,transparent)] px-3 py-1.5 text-sm text-[var(--accent-primary)] transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] hover:bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)]"
                 >
                   {tool}
                 </span>
@@ -215,19 +215,19 @@ function SkillDetailModal({ skill, onClose }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[color-mix(in_srgb,var(--bg-primary)_80%,transparent)] backdrop-blur-sm"
       onClick={onClose}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="relative w-full max-w-lg rounded-[2rem] border border-white/10 bg-[#0a0f1e] p-8 shadow-2xl"
+        className="relative w-full max-w-lg rounded-[2rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[var(--bg-secondary)] p-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute right-6 top-6 rounded-full border border-white/10 bg-white/5 p-2 text-gray-400 hover:border-cyan-400/50 hover:text-cyan-300"
+          className="absolute right-6 top-6 rounded-full border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-2 text-[var(--text-muted)] hover:border-[color-mix(in_srgb,var(--accent-secondary)_50%,transparent)] hover:text-[var(--accent-primary)]"
         >
           <X size={20} />
         </button>
@@ -241,11 +241,11 @@ function SkillDetailModal({ skill, onClose }) {
           {skill.status} • {skill.level}%
         </span>
 
-        <p className="mt-6 leading-7 text-gray-300">{skill.details}</p>
+        <p className="mt-6 leading-7 text-[var(--text-secondary)]">{skill.details}</p>
 
         <div className="mt-6">
-          <h4 className="text-sm uppercase tracking-wider text-gray-500 mb-3">Proficiency</h4>
-          <div className="h-3 overflow-hidden rounded-full bg-white/10">
+          <h4 className="text-sm uppercase tracking-wider text-[var(--text-dim)] mb-3">Proficiency</h4>
+          <div className="h-3 overflow-hidden rounded-full bg-[color-mix(in_srgb,var(--text-primary)_10%,transparent)]">
             <div
               className={`h-full rounded-full bg-gradient-to-r ${config.gauge}`}
               style={{ width: `${skill.level}%` }}
@@ -253,8 +253,8 @@ function SkillDetailModal({ skill, onClose }) {
           </div>
         </div>
 
-        <div className="mt-8 rounded-xl border border-cyan-400/20 bg-cyan-400/5 p-4">
-          <p className="text-sm text-cyan-300 font-medium">
+        <div className="mt-8 rounded-xl border border-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_5%,transparent)] p-4">
+          <p className="text-sm text-[var(--accent-primary)] font-medium">
             💡 Tip: Click on any project in the Projects section to see this skill in action.
           </p>
         </div>

@@ -36,12 +36,12 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#050816] text-white mb-10">
+    <section className="relative min-h-screen overflow-hidden bg-[var(--bg-primary)] text-[var(--text-primary)] mb-10">
 
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.16),transparent_35%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.08),transparent_55%)]" />
-      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent-secondary)_16%,transparent),transparent_35%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,color-mix(in_srgb,var(--gradient-to)_8%,transparent),transparent_55%)]" />
+      <div className="absolute inset-0 opacity-20 bg-[linear-gradient(color-mix(in_srgb,var(--text-primary)_6%,transparent)_1px,transparent_1px),linear-gradient(90deg,color-mix(in_srgb,var(--text-primary)_6%,transparent)_1px,transparent_1px)] bg-[size:80px_80px]" />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-8xl flex-col items-center justify-center px-6 pt-20 lg:flex-row lg:gap-16">
 
@@ -55,7 +55,7 @@ export default function Hero() {
             <div className="lg:hidden absolute inset-0 bottom-20 left-0 right-0 z-1 flex flex-col items-center animate-bounce-slow">
               <button
                 onClick={scrollToContent}
-                className="flex flex-col items-center gap-2 text-cyan-300 transition hover:text-cyan-200"
+                className="flex flex-col items-center gap-2 text-[var(--accent-primary)] transition hover:text-[var(--accent-primary)]"
               >
                 <span className="text-xs uppercase tracking-[0.3em] font-medium">Scroll Down</span>
                 <ChevronDown size={28} className="animate-pulse" />
@@ -82,9 +82,9 @@ export default function Hero() {
 
           {/* Badge */}
 
-          <div className="inline-flex items-center gap-3 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 backdrop-blur-md">
+          <div className="inline-flex items-center gap-3 rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)] px-4 py-2 text-sm text-[var(--accent-primary)] backdrop-blur-md">
 
-            <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_12px_3px_rgba(34,211,238,0.8)]" />
+            <span className="h-2 w-2 rounded-full bg-[var(--accent-primary)] shadow-[0_0_12px_3px_var(--accent-glow)]" />
 
             {heroData.badge.text}
 
@@ -92,7 +92,7 @@ export default function Hero() {
 
           <div className="space-y-4">
 
-            <p className="text-sm uppercase tracking-[0.4em] text-gray-400">
+            <p className="text-sm uppercase tracking-[0.4em] text-[var(--text-muted)]">
               {heroData.subtitle}
             </p>
 
@@ -100,11 +100,11 @@ export default function Hero() {
 
               {heroData.title.prefix}
 
-              <span className="block bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[var(--accent-primary)] via-[var(--gradient-mid)] to-[var(--gradient-to)] bg-clip-text text-transparent">
 
                 {typedText}
 
-                <span className="ml-1 animate-pulse text-cyan-300">
+                <span className="ml-1 animate-pulse text-[var(--accent-primary)]">
                   |
                 </span>
 
@@ -119,7 +119,7 @@ export default function Hero() {
                 }`}
             >
 
-              <p className="mx-auto max-w-2xl text-lg leading-8 text-gray-300 lg:mx-0">
+              <p className="mx-auto max-w-2xl text-lg leading-8 text-[var(--text-secondary)] lg:mx-0">
                 {heroData.description}
               </p>
 
@@ -134,8 +134,8 @@ export default function Hero() {
                     href={button.link}
                     className={
                       button.variant === "primary"
-                        ? "rounded-full bg-cyan-400 px-7 py-3 font-semibold text-black transition duration-300 hover:scale-105 hover:bg-cyan-300"
-                        : "rounded-full border border-cyan-400/60 bg-white/5 px-7 py-3 font-semibold text-cyan-300 backdrop-blur-md transition duration-300 hover:scale-105 hover:bg-cyan-400 hover:text-black"
+                        ? "rounded-full bg-[var(--accent-secondary)] px-7 py-3 font-semibold text-[var(--bg-primary)] transition duration-300 hover:scale-105 hover:bg-[var(--accent-primary)]"
+                        : "rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] px-7 py-3 font-semibold text-[var(--accent-primary)] backdrop-blur-md transition duration-300 hover:scale-105 hover:bg-[var(--accent-secondary)] hover:text-[var(--bg-primary)]"
                     }
                   >
                     {button.text}
@@ -153,14 +153,14 @@ export default function Hero() {
 
                   <div
                     key={index}
-                    className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-md"
+                    className="rounded-2xl border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-4 backdrop-blur-md"
                   >
 
-                    <p className="text-2xl font-bold text-cyan-300">
+                    <p className="text-2xl font-bold text-[var(--accent-primary)]">
                       {stat.value}
                     </p>
 
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm text-[var(--text-muted)]">
                       {stat.label}
                     </p>
 

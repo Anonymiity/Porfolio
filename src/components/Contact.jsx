@@ -16,9 +16,9 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-[#070d1a] px-6 py-28 text-white"
+      className="relative overflow-hidden bg-[var(--bg-secondary)] px-6 py-28 text-[var(--text-primary)]"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.12),transparent_35%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent-secondary)_12%,transparent),transparent_35%)]" />
       
       <div className="relative mx-auto max-w-6xl">
         <motion.div
@@ -26,15 +26,15 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
-          className="rounded-[2rem] border border-white/10 bg-white/5 p-10 text-center shadow-2xl shadow-cyan-500/10 backdrop-blur-md"
+          className="rounded-[2rem] border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] p-10 text-center shadow-[0_10px_40px_-10px_color-mix(in_srgb,var(--accent-glow)_10%,transparent)] backdrop-blur-md"
         >
-          <p className="text-sm uppercase tracking-[0.4em] text-cyan-300">
+          <p className="text-sm uppercase tracking-[0.4em] text-[var(--accent-primary)]">
             {header.subtitle}
           </p>
           <h2 className="mt-4 text-4xl font-bold md:text-5xl">
             {header.title}
           </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-lg leading-8 text-gray-400">
+          <p className="mt-4 mx-auto max-w-2xl text-lg leading-8 text-[var(--text-muted)]">
             {header.description}
           </p>
 
@@ -47,15 +47,15 @@ export default function Contact() {
                   key={index}
                   href={item.link}
                   whileHover={{ y: -4, scale: 1.02 }}
-                  className="group rounded-2xl border border-white/10 bg-black/20 p-6 transition hover:border-cyan-400/50 hover:bg-white/10"
+                  className="group rounded-2xl border border-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] bg-[color-mix(in_srgb,var(--bg-primary)_20%,transparent)] p-6 transition hover:border-[color-mix(in_srgb,var(--accent-secondary)_50%,transparent)] hover:bg-[color-mix(in_srgb,var(--text-primary)_10%,transparent)]"
                 >
-                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-cyan-400/30 bg-cyan-400/10 text-cyan-300 transition group-hover:bg-cyan-400/20">
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl border border-[color-mix(in_srgb,var(--accent-secondary)_30%,transparent)] bg-[color-mix(in_srgb,var(--accent-secondary)_10%,transparent)] text-[var(--accent-primary)] transition group-hover:bg-[color-mix(in_srgb,var(--accent-secondary)_20%,transparent)]">
                     <Icon size={22} />
                   </div>
-                  <h4 className="text-lg font-semibold text-cyan-300">
+                  <h4 className="text-lg font-semibold text-[var(--accent-primary)]">
                     {item.title}
                   </h4>
-                  <p className="mt-2 break-all text-gray-300">
+                  <p className="mt-2 break-all text-[var(--text-secondary)]">
                     {item.value}
                   </p>
                 </motion.a>
@@ -64,7 +64,7 @@ export default function Contact() {
           </div>
 
           {/* Social Links */}
-          <div className="mx-auto mt-10 w-fit rounded-2xl border border-white/40 bg-white/10 p-6 backdrop-blur-md">
+          <div className="mx-auto mt-10 w-fit rounded-2xl border border-[color-mix(in_srgb,var(--text-primary)_40%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_10%,transparent)] p-6 backdrop-blur-md">
             <div className="flex flex-wrap justify-center gap-6">
               {socialsData.socials.map((social) => (
                 <motion.a
@@ -91,7 +91,7 @@ export default function Contact() {
             <h3 className="text-2xl font-semibold">
               {cta.title}
             </h3>
-            <p className="mt-3 mx-auto max-w-2xl text-gray-400 leading-7">
+            <p className="mt-3 mx-auto max-w-2xl text-[var(--text-muted)] leading-7">
               {cta.description}
             </p>
 
@@ -100,7 +100,7 @@ export default function Contact() {
                 href={cta.button.link}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-8 py-3 font-semibold text-black transition hover:bg-cyan-300"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--accent-secondary)] px-8 py-3 font-semibold text-[var(--bg-primary)] transition hover:bg-[var(--accent-primary)]"
               >
                 <MessageCircle size={18} />
                 {cta.button.text}
@@ -111,7 +111,7 @@ export default function Contact() {
                   href={cta.resume.link}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 rounded-full border border-cyan-400/60 bg-white/5 px-8 py-3 font-semibold text-cyan-300 backdrop-blur-md transition hover:bg-cyan-400 hover:text-black"
+                  className="inline-flex items-center gap-2 rounded-full border border-[color-mix(in_srgb,var(--accent-secondary)_60%,transparent)] bg-[color-mix(in_srgb,var(--text-primary)_5%,transparent)] px-8 py-3 font-semibold text-[var(--accent-primary)] backdrop-blur-md transition hover:bg-[var(--accent-secondary)] hover:text-[var(--bg-primary)]"
                 >
                   <Download size={18} />
                   {cta.resume.text}
