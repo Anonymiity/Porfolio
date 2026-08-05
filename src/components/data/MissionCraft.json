@@ -1,0 +1,47 @@
+{
+  "canvas": {
+    "height": "600px",
+    "shadows": true
+  },
+  "camera": {
+    "position": [0, 2, 15],
+    "fov": 45,
+    "near": 0.1,
+    "far": 1000
+  },
+  "lights": {
+    "ambient": {
+      "intensity": 1.8
+    },
+    "directional": {
+      "position": [10, 10, 10],
+      "intensity": 2.5,
+      "castShadow": true
+    },
+    "point": {
+      "position": [-10, 5, 10],
+      "intensity": 1.5
+    }
+  },
+  "bounds": {
+    "fit": true,
+    "clip": true,
+    "observe": true,
+    "margin": 1.2
+  },
+  "float": {
+    "speed": 1,
+    "rotationIntensity": 0.2,
+    "floatIntensity": 0.3
+  },
+  "controls": {
+    "target": [0, 2, 0],
+    "enablePan": false,
+    "enableDamping": true,
+    "dampingFactor": 0.08,
+    "minDistance": 8,
+    "maxDistance": 25,
+    "maxPolarAngle": 1.7453292519943295,
+    "minPolarAngle": 0.7853981633974483
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "mesh_2_1": {
+    "displayName": "Nose Cone",
+    "material": "Fiberglass Composite (GFRP) or Carbon Fiber Reinforced Polymer (CFRP)",
+    "mass": "Depends on vehicle size",
+    "description": "Reduces aerodynamic drag while protecting the payload and recovery system during flight.",
+    "color": "#4F46E5",
+    "fullDescription": "The nose cone is the foremost aerodynamic component of a rocket. Its streamlined profile minimizes pressure drag and helps maintain stable airflow throughout ascent. It protects internal payloads and transfers aerodynamic loads into the main airframe.",
+    "specifications": {
+      "Shape": "Von Kármán, Ogive or Elliptical",
+      "Length-to-Diameter Ratio": "3–5",
+      "Wall Thickness": "2–5 mm",
+      "Surface Finish": "Smooth aerodynamic finish",
+      "Design Objective": "Minimum drag with adequate structural strength"
+    },
+    "functions": [
+      "Reduce aerodynamic drag",
+      "Protect payload",
+      "Improve flight stability",
+      "Transfer aerodynamic loads"
+    ],
+    "engineeringNotes": "The nose cone profile is selected to minimize drag while maintaining structural integrity. Composite construction provides high stiffness with low mass and is widely used in sounding rockets and high-power rockets.",
+    "materialProperties": {
+      "Typical Material": "GFRP or CFRP",
+      "Primary Requirement": "High stiffness-to-weight ratio",
+      "Key Characteristic": "Lightweight and corrosion resistant"
+    }
+  },
+
+  "Payload-1": {
+    "displayName": "Payload Bay",
+    "material": "Aluminium 6061-T6 or Carbon Fiber Composite",
+    "mass": "Mission dependent",
+    "description": "Houses payloads, avionics, sensors, telemetry equipment and recovery electronics.",
+    "color": "#0EA5E9",
+    "fullDescription": "The payload bay provides a protected compartment for scientific instruments, electronics, cameras, or experimental payloads. It is designed for easy integration while maintaining structural integrity during launch and recovery.",
+    "specifications": {
+      "Diameter": "Matches airframe diameter",
+      "Mounting": "Modular bulkhead attachment",
+      "Accessibility": "Removable section",
+      "Environmental Protection": "Dust and moisture resistant",
+      "Structural Requirement": "Supports payload during launch loads"
+    },
+    "functions": [
+      "House payload",
+      "Protect electronics",
+      "Support telemetry equipment",
+      "Enable modular integration"
+    ],
+    "engineeringNotes": "Payload bays are commonly designed with removable couplers or access panels to simplify installation and maintenance of avionics and scientific payloads.",
+    "materialProperties": {
+      "Typical Material": "Aluminium 6061-T6 or CFRP",
+      "Primary Requirement": "High strength with low weight",
+      "Key Characteristic": "Good machinability and corrosion resistance"
+    }
+  },
+
+  "Bulkhead-1": {
+    "displayName": "Bulkhead",
+    "material": "Aluminium 6061-T6, Aluminium 7075-T6 or G10 Fiberglass",
+    "mass": "Depends on rocket diameter",
+    "description": "Separates rocket compartments while transferring structural loads.",
+    "color": "#22C55E",
+    "fullDescription": "Bulkheads are structural members that connect adjacent rocket sections. They transfer axial, bending, and shear loads while providing mounting locations for recovery systems, payloads, and couplers.",
+    "specifications": {
+      "Configuration": "Circular structural plate",
+      "Fastening": "Bolted or bonded",
+      "Design Objective": "High stiffness with low mass",
+      "Primary Loads": "Axial, shear and bending",
+      "Integration": "Compatible with couplers and recovery hardware"
+    },
+    "functions": [
+      "Transfer structural loads",
+      "Separate compartments",
+      "Support recovery hardware",
+      "Maintain structural alignment"
+    ],
+    "engineeringNotes": "Bulkheads are typically machined with weight reduction features while maintaining adequate stiffness for flight loads.",
+    "materialProperties": {
+      "Typical Material": "Aluminium Alloy or G10",
+      "Primary Requirement": "High stiffness",
+      "Key Characteristic": "Excellent load carrying capability"
+    }
+  },
+
+  "Main_Body_Tube-1": {
+    "displayName": "Main Body Tube",
+    "material": "Carbon Fiber Composite, Fiberglass Composite or Phenolic Tube",
+    "mass": "Depends on vehicle dimensions",
+    "description": "Primary structural member supporting the complete launch vehicle.",
+    "color": "#F97316",
+    "fullDescription": "The body tube forms the main airframe of the rocket. It connects all structural components and carries thrust, aerodynamic, bending, and landing loads throughout the mission.",
+    "specifications": {
+      "Geometry": "Cylindrical",
+      "Wall Thickness": "1–3 mm",
+      "Design Objective": "High stiffness-to-weight ratio",
+      "Primary Loads": "Compression, bending and torsion",
+      "Buckling Consideration": "Critical structural design criterion"
+    },
+    "functions": [
+      "Primary structural member",
+      "Support internal components",
+      "Transfer flight loads",
+      "Provide aerodynamic shape"
+    ],
+    "engineeringNotes": "Body tubes are designed to resist buckling while minimizing structural weight. Composite airframes are preferred for their excellent stiffness-to-weight ratio.",
+    "materialProperties": {
+      "Typical Material": "CFRP, GFRP or Phenolic",
+      "Primary Requirement": "High specific stiffness",
+      "Key Characteristic": "Excellent structural efficiency"
+    }
+  },
+
+  "Fins-1": {
+    "displayName": "Fin Assembly",
+    "material": "G10 Fiberglass, Carbon Fiber Composite or Aircraft Grade Plywood",
+    "mass": "Depends on configuration",
+    "description": "Provides aerodynamic stability by keeping the rocket aligned with the flight path.",
+    "color": "#E11D48",
+    "fullDescription": "Rocket fins generate restoring aerodynamic forces whenever the vehicle deviates from its intended trajectory. Proper fin sizing ensures static stability while minimizing aerodynamic drag.",
+    "specifications": {
+      "Configuration": "3 or 4 fins",
+      "Airfoil": "Symmetric or flat plate",
+      "Sweep": "Moderate rear sweep",
+      "Mounting": "Through-the-wall or surface mounted",
+      "Design Objective": "Static stability with minimum drag"
+    },
+    "functions": [
+      "Provide static stability",
+      "Control center of pressure",
+      "Reduce flight oscillations",
+      "Maintain directional stability"
+    ],
+    "engineeringNotes": "Fin geometry is selected to achieve adequate stability margin while minimizing structural weight and aerodynamic drag.",
+    "materialProperties": {
+      "Typical Material": "G10 or CFRP",
+      "Primary Requirement": "High bending stiffness",
+      "Key Characteristic": "Impact resistant and lightweight"
+    }
+  },
+
+  "Tail_Section-1": {
+    "displayName": "Motor Section",
+    "material": "Aluminium Alloy, Phenolic Composite and Steel Hardware",
+    "mass": "Motor dependent",
+    "description": "Houses the propulsion system and transfers thrust into the airframe.",
+    "color": "#A855F7",
+    "fullDescription": "The motor section integrates the propulsion system, motor mount, retention hardware, and thermal protection components. It safely transfers thrust loads into the rocket structure during powered flight.",
+    "specifications": {
+      "Motor Compatibility": "Mission dependent",
+      "Retention": "Mechanical retention system",
+      "Thermal Protection": "Insulating liner if required",
+      "Load Path": "Transfers thrust into airframe",
+      "Replaceability": "Removable motor mount"
+    },
+    "functions": [
+      "Support propulsion system",
+      "Transfer thrust loads",
+      "Retain rocket motor",
+      "Provide thermal protection"
+    ],
+    "engineeringNotes": "Motor mounts are designed for rapid replacement while ensuring reliable load transfer and thermal protection during motor operation.",
+    "materialProperties": {
+      "Typical Material": "Aluminium Alloy and Phenolic Composite",
+      "Primary Requirement": "Heat resistance and structural strength",
+      "Key Characteristic": "Reliable thrust transfer"
+    }
+  },
+
+  "mesh_2": {
+    "displayName": "Coupler / Shoulder",
+    "material": "Fiberglass Composite, Carbon Fiber Composite or Phenolic Tube",
+    "mass": "Depends on diameter",
+    "description": "Connects the nose cone to the airframe while maintaining structural alignment.",
+    "color": "#FACC15",
+    "fullDescription": "The shoulder or coupler fits inside the body tube and provides a secure mechanical interface between rocket sections. It maintains alignment while allowing easy separation for payload access or recovery deployment.",
+    "specifications": {
+      "Fit": "Slip fit",
+      "Clearance": "Minimal radial clearance",
+      "Attachment": "Bonded to nose cone",
+      "Load Transfer": "Aerodynamic and inertial loads",
+      "Design Objective": "Secure alignment with reliable separation"
+    },
+    "functions": [
+      "Connect rocket sections",
+      "Maintain alignment",
+      "Transfer structural loads",
+      "Allow controlled separation"
+    ],
+    "engineeringNotes": "Couplers are designed with tight manufacturing tolerances to ensure reliable alignment while preventing excessive friction during separation events.",
+    "materialProperties": {
+      "Typical Material": "GFRP, CFRP or Phenolic",
+      "Primary Requirement": "Dimensional stability",
+      "Key Characteristic": "Accurate fit with high strength"
+    }
+  }
+}

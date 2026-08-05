@@ -1,0 +1,47 @@
+{
+  "badge": {
+    "text": "Aerospace Engineer | Boeing Stress Engineering Apprentice"
+  },
+  "subtitle": "Aircraft Structures • Propulsion • FEA • CFD",
+  "title": {
+    "prefix": "Engineering",
+    "typing": "Future Aerospace Systems"
+  },
+  "description": "Aerospace Engineering, who is very eager to learn and make a working efficient rockets and aircrafts. With industry experience in aircraft structural analysis at Boeing and propulsion materials research at ASL, DRDO. Passionate about aircraft structures, finite element analysis, propulsion systems and solving real-world aerospace engineering challenges.",
+  "buttons": [
+    {
+      "text": "View My Work",
+      "link": "#projects",
+      "variant": "primary"
+    },
+    {
+      "text": "Get In Touch",
+      "link": "#contact",
+      "variant": "secondary"
+    }
+  ],
+  "stats": [
+    {
+      "value": "1 year",
+      "label": "Boeing",
+      "link": "#experience"
+
+    },
+    {
+      "value": "8.72",
+      "label": "CGPA",
+      "link": "#education"
+
+    },
+    {
+      "value": "10+",
+      "label": "Engineering Projects",
+      "link": "#projects"
+    },
+    {
+      "value": "DRDO",
+      "label": "Research Intern",
+      "link": "#experience"
+    }
+  ]
+}

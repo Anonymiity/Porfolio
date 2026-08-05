@@ -1,0 +1,64 @@
+{
+  "header": {
+    "title": "Experience",
+    "description": "My professional journey in aircraft structures and aerospace propulsion through industry and research."
+  },
+  "timeline": [
+    {
+      "role": "Stress Engineering Apprentice",
+      "organization": "Boeing India",
+      "logo": "/logos/boeing.png",
+      "duration": "Aug 2025 – Aug 2026",
+      "location": "Chennai, India",
+      "description": [
+        "Supported structural validation activities for B777-9 Interior Responsibility Center (IRC) commodities, including ceiling panels, class dividers, doorway linings, and sidewalls.",
+        "Developed finite element models using Altair HyperMesh by performing geometry cleanup, midsurface extraction, shell meshing, material and property assignment, beam modelling using HyperBeam, and structural connections using RBE2, RBE3, CBUSH, and CONM2 elements.",
+        "Performed structural analysis using MSC Nastran, evaluating stress distribution, load paths, and Margin of Safety (MoS) to support aircraft interior certification activities.",
+        "Developed engineering calculation sheets for section analysis and lap shear joint substantiation, assisting in structural assessments and engineering documentation.",
+        "Studied Boeing structural design manuals, D6 documentation, sandwich panels, inserts, dog-bone brackets, tie rods, and tab-slot joints while supporting aircraft interior structural design and certification."
+      ],
+      "skills": [
+        "Altair HyperMesh",
+        "MSC Nastran",
+        "Patran",
+        "HyperView",
+        "Finite Element Analysis",
+        "Margin of Safety",
+        "Structural Analysis",
+        "Microsoft Excel"
+      ],
+      "highlights": [
+        "Worked on B777-9 Interior Responsibility Center (IRC) structures",
+        "Developed engineering calculation sheets for structural substantiation",
+        "Supported aircraft structural validation and certification activities"
+      ]
+    },
+    {
+      "role": "Research Intern",
+      "organization": "DRDO – Advanced Systems Laboratory (ASL)",
+      "logo": "/logos/drdo.png",
+      "duration": "May 2025 – Jul 2025",
+      "location": "Hyderabad, India",
+      "description": [
+        "Conducted characterization of low-density EPDM ablative insulation materials for Solid Rocket Motor thermal protection systems.",
+        "Performed material testing including density, Shore A hardness, tensile strength, elongation, rheometry, glass transition temperature (Tg), thermal conductivity, coefficient of thermal expansion (CTE), FTIR, erosion testing, and crosslink density.",
+        "Analysed experimental results to evaluate the mechanical, thermal, and chemical behaviour of ablative insulation materials for aerospace propulsion applications.",
+        "Worked alongside DRDO scientists to support the development and validation of advanced thermal protection materials for solid rocket motors."
+      ],
+      "skills": [
+        "Material Characterization",
+        "Thermal Analysis",
+        "FTIR",
+        "Rheometry",
+        "Solid Rocket Motors",
+        "EPDM",
+        "Thermal Protection Systems"
+      ],
+      "highlights": [
+        "Characterized low-density EPDM ablative insulation materials",
+        "Performed comprehensive mechanical, thermal, and chemical material testing",
+        "Contributed to propulsion material research for Solid Rocket Motors"
+      ]
+    }
+  ]
+}

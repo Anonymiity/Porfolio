@@ -1,0 +1,213 @@
+{
+  "header": {
+    "subtitle": "MISSION CONTROL // SOLAR SYSTEM DATABASE",
+    "title": {
+      "normal": "Skill",
+      "highlight": "Universe"
+    },
+    "description": "Every planet represents a domain I've explored throughout my aerospace journey. Enter orbit to discover the technologies, tools, and missions behind each one."
+  },
+  "star": {
+    "name": "TANUSH LAD",
+    "class": "Aerospace Engineer",
+    "level": "Graduate",
+    "status": "ACTIVE",
+    "coreTemp": "5,778 K",
+    "missions": 10,
+    "xp": "8.72 CGPA"
+  },
+  "orbits": [
+    {
+      "ring": 1,
+      "name": "Core Systems",
+      "distance": "close",
+      "speed": "fast",
+      "color": "from-orange-400 to-red-500",
+      "glow": "rgba(249,115,22,0.6)"
+    },
+    {
+      "ring": 2,
+      "name": "Engineering Orbit",
+      "distance": "medium",
+      "speed": "normal",
+      "color": "from-cyan-400 to-blue-500",
+      "glow": "rgba(34,211,238,0.6)"
+    },
+    {
+      "ring": 3,
+      "name": "Technology Belt",
+      "distance": "far",
+      "speed": "slow",
+      "color": "from-purple-400 to-pink-500",
+      "glow": "rgba(168,85,247,0.6)"
+    }
+  ],
+  "planets": [
+    {
+      "id": "structural-analysis",
+      "name": "Structures",
+      "category": "CORE",
+      "ring": 1,
+      "size": 56,
+      "color": "#f97316",
+      "glow": "shadow-orange-500/60",
+      "orbitDuration": 20,
+      "startAngle": 0,
+      "level": 92,
+      "description": "Aircraft structural analysis, finite element modelling, load path evaluation, and Margin of Safety for Boeing B777-9 interior structures.",
+      "moons": [
+        "HyperMesh",
+        "MSC Nastran",
+        "Patran",
+        "HyperView",
+        "Hand Calculations"
+      ],
+      "projects": 4,
+      "years": 1
+    },
+    {
+      "id": "propulsion",
+      "name": "Propulsion",
+      "category": "CORE",
+      "ring": 1,
+      "size": 52,
+      "color": "#ef4444",
+      "glow": "shadow-red-500/60",
+      "orbitDuration": 25,
+      "startAngle": 120,
+      "level": 84,
+      "description": "Rocket propulsion, solid rocket motors, nozzle analysis, combustion fundamentals, and propulsion material characterization at DRDO-ASL.",
+      "moons": [
+        "NASA CEA",
+        "ANSYS Fluent",
+        "Solid Rocket Motors"
+      ],
+      "projects": 4,
+      "years": 4
+    },
+    {
+      "id": "cfd-aero",
+      "name": "CFD",
+      "category": "SIM",
+      "ring": 2,
+      "size": 48,
+      "color": "#06b6d4",
+      "glow": "shadow-cyan-500/60",
+      "orbitDuration": 35,
+      "startAngle": 45,
+      "level": 81,
+      "description": "Computational Fluid Dynamics using ANSYS Fluent for nozzle flows, pintle injectors, and aerodynamic analysis.",
+      "moons": [
+        "ANSYS Fluent",
+        "CFD",
+        "Gas Dynamics"
+      ],
+      "projects": 5,
+      "years": 3
+    },
+    {
+      "id": "simulation",
+      "name": "Simulation",
+      "category": "SIM",
+      "ring": 2,
+      "size": 46,
+      "color": "#3b82f6",
+      "glow": "shadow-blue-500/60",
+      "orbitDuration": 40,
+      "startAngle": 200,
+      "level": 90,
+      "description": "Structural simulation, digital twin development, validation testing, and engineering analysis using numerical methods.",
+      "moons": [
+        "ANSYS",
+        "Hypermesh",
+        "Python"
+      ],
+      "projects": 4,
+      "years": 2
+    },
+    {
+      "id": "programming",
+      "name": "Programming",
+      "category": "TECH",
+      "ring": 3,
+      "size": 42,
+      "color": "#eab308",
+      "glow": "shadow-yellow-500/60",
+      "orbitDuration": 55,
+      "startAngle": 80,
+      "level": 80,
+      "description": "Python, MATLAB, Arduino programming, and Microsoft Excel automation for engineering analysis and data processing.",
+      "moons": [
+        "Python",
+        "MATLAB",
+        "Arduino",
+        "ESP32",
+        "JavaScript",
+        "MERN",
+        "Excel"
+      ],
+      "projects": 2,
+      "years": 1
+    },
+    {
+      "id": "cad-design",
+      "name": "CAD Design",
+      "category": "TECH",
+      "ring": 3,
+      "size": 44,
+      "color": "#a855f7",
+      "glow": "shadow-violet-500/60",
+      "orbitDuration": 50,
+      "startAngle": 280,
+      "level": 95,
+      "description": "3D CAD modelling and engineering design for aircraft, rockets, propulsion systems, and mechanical assemblies.",
+      "moons": [
+        "SolidWorks",
+        "CATIA V5",
+        "AutoCAD"
+      ],
+      "projects": 8,
+      "years": 4
+    }
+  ],
+  "asteroids": [
+    "HyperMesh",
+    "MSC Nastran",
+    "Patran",
+    "HyperView",
+    "ANSYS Fluent",
+    "ANSYS Mechanical",
+    "SolidWorks",
+    "CATIA V5",
+    "Python",
+    "MATLAB",
+    "Microsoft Excel",
+    "NASA CEA",
+    "Arduino",
+    "ESP32",
+    "Git",
+    "React"
+  ],
+  "systems": [
+    {
+      "name": "Structures",
+      "status": "ONLINE",
+      "load": 95
+    },
+    {
+      "name": "Propulsion",
+      "status": "ONLINE",
+      "load": 92
+    },
+    {
+      "name": "Simulation",
+      "status": "ONLINE",
+      "load": 90
+    },
+    {
+      "name": "Programming",
+      "status": "ONLINE",
+      "load": 84
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Education",
+    "description": "Academic foundation in aerospace engineering with a strong focus on aircraft structures, propulsion, computational analysis, and aerospace system design."
+  },
+  "education": [
+    {
+      "degree": "B.Tech in Aerospace Engineering",
+      "institution": "SRM Institute of Science and Technology",
+      "location": "Chennai, India",
+      "duration": "2022 – 2026",
+      "cgpa": "8.72/10",
+      "coursework": [
+        "Aerodynamics",
+        "Aircraft Structures",
+        "Aircraft Stability and Control",
+        "Aircraft Propulsion",
+        "Computational Fluid Dynamics",
+        "Flight Dynamics",
+        "Basics of Materials"
+      ],
+      "achievements": [
+        "Co-founder and Mechanical Lead of Team SCOUTs, Rocketry and Aeromodeling team.",
+        "Winner of CAD competition in world space week 2024."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Aircraft Design",
+      "issuer": "NPTEL, IIT Kanpur",
+      "year": "2025"
+    },
+    {
+      "name": "Flightfury",
+      "issuer": "IIT Roorkee - Cognizance 2023",
+      "year": "2023"
+    }
+  ]
+}
