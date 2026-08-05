@@ -13,10 +13,10 @@
       "duration": "Jan 2026 – May 2026",
       "role": "Aerospace Lead",
       "teamSize": 4,
-      "image": "/projects/digital-twin.jpg",
+      "image": "../projects/digital-twin.jpg",
       "link": "#",
       "github": "#",
-      "report": "/projects/digital-twin.pdf"
+      "report": "../projects/digital-twin.pdf"
     },
     {
       "id": "pintle-injector",
@@ -27,10 +27,10 @@
       "duration": "Sep 2024 – Dec 2024",
       "role": "Team Lead",
       "teamSize": 3,
-      "image": "/projects/pintle.png",
+      "image": "../projects/pintle.png",
       "link": "#",
       "github": "#",
-      "report": "/projects/pintle.pdf"
+      "report": "../projects/pintle.pdf"
     },
     {
       "id": "cd-nozzle",
@@ -41,7 +41,7 @@
       "duration": "Jul 2024 – Aug 2024",
       "role": "Team Lead",
       "teamSize": 2,
-      "image": "/projects/nozzle.png",
+      "image": "../projects/nozzle.png",
       "link": "#",
       "github": "#",
       "report": ""
@@ -55,10 +55,10 @@
       "duration": "Aug 2024 – Nov 2024",
       "role": "Team Member",
       "teamSize": 3,
-      "image": "/projects/srm.jpg",
+      "image": "../projects/srm.jpg",
       "link": "#",
       "github": "#",
-      "report": "/projects/rocket.mp4"
+      "report": "../projects/rocket.mp4"
     },
     {
       "id": "auto-throttle",
@@ -69,7 +69,7 @@
       "duration": "Mar 2025 – May 2025",
       "role": "Team Member",
       "teamSize": 2,
-      "image": "/projects/auto-throttle.jpg",
+      "image": "../projects/auto-throttle.jpg",
       "link": "#",
       "github": "#",
       "report": "#"
@@ -83,7 +83,7 @@
       "duration": "Oct 2024 – Nov 2024",
       "role": "Team Member",
       "teamSize": 2,
-      "image": "/projects/parachute.png",
+      "image": "../projects/parachute.png",
       "link": "#",
       "github": "#",
       "report": ""
@@ -97,7 +97,7 @@
       "duration": "Feb 2025 – Apr 2025",
       "role": "Mech Lead",
       "teamSize": 5,
-      "image": "/projects/rocket.png",
+      "image": "../projects/rocket.png",
       "link": "#",
       "github": "#",
       "report": ""
